@@ -6,56 +6,6 @@ a {
   @apply no-underline hover:underline;
 }
 
-/** header **/
-.site-header {
-  @apply flex flex-col my-4 xl:m-auto xl:max-w-screen-2xl lg:my-10 lg:items-center lg:flex-row;
-}
-
-.site-branding {
-  @apply flex flex-col mx-6 lg:mx-10;
-}
-
-.site-branding > p {
-  @apply m-0;
-}
-
-.site-title {
-  @apply m-0 text-5xl font-display;
-}
-
-.site-title a {
-  @apply hover:no-underline;
-}
-
-.site-description {
-  @apply text-gray-500;
-}
-
-/** navigation **/
-.main-navigation {
-  @apply mx-6 my-3 lg:mx-10;
-}
-
-.main-navigation > ul,
-.main-navigation ul > li {
-  @apply p-0 m-0 list-none;
-}
-
-.main-navigation ul {
-  @apply p-0 m-0 lg:flex;
-}
-
-.main-navigation ul > li {
-  @apply p-0 lg:mx-5;
-}
-
-.main-navigation ul > li > ul {
-  @apply pl-3 ml-3;
-}
-
-.main-navigation ul > li > ul > li {
-  @apply p-0 mx-0 list-disc;
-}
 
 /** main **/
 .site-main {
