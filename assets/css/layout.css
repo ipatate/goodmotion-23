@@ -1,3 +1,16 @@
+body {
+  @apply bg-background;
+}
+
+.site-main,
+.main-content {
+  @apply mt-0;
+}
+
+.main-content {
+  @apply min-h-[60vh] py-16 mt-0;
+}
+
 /** header **/
 .site-header {
   @apply flex flex-col py-4 bg-gray-50 backdrop-blur-md lg:items-center lg:flex-row;
@@ -69,4 +82,26 @@
 
 .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__submenu-container {
   @apply pt-2
+}
+
+/** footer */
+
+footer {
+  @apply bg-secondary p-4 lg:p-14
+}
+
+footer > .wp-block-group {
+  @apply flex-col md:flex-row
+}
+
+footer > .wp-block-group > .wp-block-group > .wp-block-image {
+  @apply mb-2
+}
+
+footer > .wp-block-group > .wp-block-group {
+  @apply flex-1 lg:pl-10 mt-6 md:mt-0 items-center
+}
+
+footer > .wp-block-group > .wp-block-group:first-child {
+  @apply items-start
 }

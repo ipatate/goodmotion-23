@@ -22,7 +22,7 @@ function setup()
   /** PATTERNS SECTION */
 
   // add category for theme patterns
-  register_block_pattern_category('press-wind/press-wind-patterns', array('label' => __('Press Wind', 'press-wind')));
+  register_block_pattern_category('goodmotion/goodmotion-patterns', array('label' => __('Goodmotion', 'press-wind')));
   // add theme support for the core-block-patterns
   // add_theme_support('core-block-patterns');
 
