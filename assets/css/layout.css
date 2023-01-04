@@ -1,6 +1,6 @@
 /** header **/
 .site-header {
-  @apply flex flex-col my-4 lg:my-4 lg:items-center lg:flex-row;
+  @apply flex flex-col py-4 bg-gray-50 backdrop-blur-md lg:items-center lg:flex-row;
 }
 
 .site-header > div {
@@ -11,13 +11,26 @@
   @apply mr-auto
 }
 
-.wp-block-site-title a {
-  @apply no-underline hover:no-underline text-primary;
+.site-header > div > .site-branding a {
+  @apply flex no-underline hover:no-underline text-primary;
 }
 
+.site-header > div > .site-branding a svg {
+  @apply lg:w-64 lg:h-16
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+.site-header > div > .site-branding a svg rect {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
 /** navigation */
 .main-navigation {
-  @apply mx-6 my-3 lg:mx-10;
+  @apply mx-6 my-3 lg:mx-14;
 }
 
 .main-navigation a {
@@ -45,6 +58,7 @@
   @apply p-0 mx-0 list-disc;
 }
 
+/** specific nav */
 .wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
   @apply lg:backdrop-blur-md bg-white/30 border-none
 }
