@@ -1,0 +1,28 @@
+/** width content align */
+body
+  .is-layout-constrained
+  > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+  @apply mx-auto max-w-[98vw] lg:max-w-content;
+}
+
+.main-content
+  > :where(:not(.alignleft):not(.alignright):not(.alignfull):not(.alignwide)) {
+  @apply px-4 mx-auto max-w-[98vw] lg:max-w-content;
+}
+
+.main-content > .alignleft {
+  @apply float-none mr-auto;
+}
+
+.main-content > .alignright {
+  @apply float-none ml-auto;
+}
+
+.entry-content ul {
+  @apply pl-9;
+}
+
+.entry-content ul.wp-block-social-links,
+.entry-content ul.wpp-list-posts {
+  @apply pl-0;
+}

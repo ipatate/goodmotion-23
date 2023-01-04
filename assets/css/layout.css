@@ -1,0 +1,107 @@
+body {
+  @apply bg-background;
+}
+
+.site-main,
+.main-content {
+  @apply mt-0;
+}
+
+.main-content {
+  @apply min-h-[60vh] py-16 mt-0;
+}
+
+/** header **/
+.site-header {
+  @apply flex flex-col py-4 bg-gray-50 backdrop-blur-md lg:items-center lg:flex-row;
+}
+
+.site-header > div {
+  @apply w-full max-w-wide mx-auto px-3
+}
+
+.site-header > div > .site-branding {
+  @apply mr-auto
+}
+
+.site-header > div > .site-branding a {
+  @apply flex no-underline hover:no-underline text-primary;
+}
+
+.site-header > div > .site-branding a svg {
+  @apply lg:w-64 lg:h-16
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+.site-header > div > .site-branding a svg rect {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+/** navigation */
+.main-navigation {
+  @apply mx-6 my-3 lg:mx-14;
+}
+
+.main-navigation a {
+  @apply hover:opacity-80
+}
+
+.main-navigation > ul,
+.main-navigation ul > li {
+  @apply p-0 m-0 list-none;
+}
+
+.main-navigation ul {
+  @apply p-0 m-0 lg:flex;
+}
+
+.main-navigation ul > li {
+  @apply p-0 lg:mx-3;
+}
+
+.main-navigation ul > li > ul {
+  @apply pl-3;
+}
+
+.main-navigation ul > li > ul > li {
+  @apply p-0 mx-0 list-disc;
+}
+
+/** specific nav */
+.wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
+  @apply lg:backdrop-blur-md bg-white/30 border-none
+}
+
+.wp-block-navigation .has-child:not(.open-on-click):hover>.wp-block-navigation__submenu-container {
+  @apply min-w-[11rem]
+}
+
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__submenu-container {
+  @apply pt-2
+}
+
+/** footer */
+
+footer {
+  @apply bg-secondary p-4 lg:p-14
+}
+
+footer > .wp-block-group {
+  @apply flex-col md:flex-row
+}
+
+footer > .wp-block-group > .wp-block-group > .wp-block-image {
+  @apply mb-2
+}
+
+footer > .wp-block-group > .wp-block-group {
+  @apply flex-1 lg:pl-10 mt-6 md:mt-0 items-center
+}
+
+footer > .wp-block-group > .wp-block-group:first-child {
+  @apply items-start
+}
