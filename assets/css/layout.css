@@ -86,22 +86,43 @@ body {
 
 /** footer */
 
-footer {
-  @apply bg-secondary p-4 lg:p-14
+/** global wrapper */
+.gm-footer.wp-block-group {
+  @apply max-w-[95%] mx-auto flex-col md:flex-row bg-secondary p-4 lg:pb-8 mb-8 rounded-3xl
 }
 
-footer > .wp-block-group {
-  @apply flex-col md:flex-row
+/** sub wrapper */
+.gm-footer > .wp-block-group {
+  @apply w-full max-w-wide mx-auto
 }
 
-footer > .wp-block-group > .wp-block-group > .wp-block-image {
+/** contact */
+.gm-footer > .wp-block-group:first-child {
+  @apply mt-14 mb-14 items-center flex-col md:flex-row justify-center
+}
+
+.gm-footer > .wp-block-group:first-child p {
+  @apply lg:max-w-[55%] lg:mr-3 mb-4 lg:mb-0 text-center lg:text-left
+}
+
+/** logo */
+.gm-footer > .wp-block-group > .wp-block-group > .wp-block-image {
   @apply mb-2
 }
 
-footer > .wp-block-group > .wp-block-group {
-  @apply flex-1 lg:pl-10 mt-6 md:mt-0 items-center
+.gm-footer > .wp-block-group:last-child > .wp-block-group {
+  @apply flex-1 px-4 mb-10 md:mt-0
 }
 
-footer > .wp-block-group > .wp-block-group:first-child {
-  @apply items-start
+/** nav */
+.gm-footer > .wp-block-group:last-child > .wp-block-group:last-child {
+  @apply items-center
+}
+
+.gm-footer > .wp-block-group:last-child > .wp-block-group:last-child .wp-block-social-links {
+  @apply -ml-24 mt-2
+}
+
+.gm-footer > .wp-block-group:last-child {
+  @apply mt-10 mx-auto flex-col-reverse md:flex-row max-w-content
 }
