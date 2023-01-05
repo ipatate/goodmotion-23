@@ -23,6 +23,7 @@ body
 }
 
 .entry-content ul.wp-block-social-links,
-.entry-content ul.wpp-list-posts {
+.entry-content ul.wpp-list-posts,
+.wp-block-post-title {
   @apply pl-0;
 }

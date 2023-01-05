@@ -93,7 +93,11 @@ body {
 
 /** sub wrapper */
 .gm-footer > .wp-block-group {
-  @apply w-full max-w-wide mx-auto
+  @apply w-full max-w-wide mx-auto z-0 relative
+}
+
+.gm-footer > .wp-block-group .wp-block-button__link {
+  @apply before:bg-white after:bg-white
 }
 
 /** contact */

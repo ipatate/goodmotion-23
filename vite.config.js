@@ -16,13 +16,13 @@ export default defineConfig({
       __dirname + '/**/*.php',
       // __dirname + '/**/*.twig'
     ]),
-    legacy({
-      // target is default
-      // targets: ['defaults', 'ie >= 11'],
-      additionalLegacyPolyfills: ['regenerator-runtime/runtime'],
-      polyfills: [],
-      modernPolyfills: [],
-    }),
+    // legacy({
+    //   // target is default
+    //   // targets: ['defaults', 'ie >= 11'],
+    //   additionalLegacyPolyfills: ['regenerator-runtime/runtime'],
+    //   polyfills: [],
+    //   modernPolyfills: [],
+    // }),
   ],
   base:
     process.env.APP_ENV === 'development'

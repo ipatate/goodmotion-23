@@ -1,7 +1,7 @@
-function main() {
-  console.log('hello Press Wind !!')
-}
+// function main() {
+//   console.log('hello Press Wind !!')
+// }
 
-document.addEventListener('DOMContentLoaded', () => {
-  main()
-})
+// document.addEventListener('DOMContentLoaded', () => {
+//   main()
+// })
