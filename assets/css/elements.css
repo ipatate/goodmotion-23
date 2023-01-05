@@ -1,4 +1,15 @@
-.wp-block-button__link {
-  @apply hover:bg-button hover:animate-button relative after:z-[-1] before:z-[-1] after:content-[''] after:bg-secondary after:w-full after:h-[4px] after:flex after:-right-1 after:-bottom-1 after:absolute before:content-[''] before:bg-secondary before:w-[4px] before:h-full before:flex before:-right-1 before:-bottom-1 before:absolute hover:top-[1px] hover:left-[1px] hover:before:right-[-3px] hover:before:bottom-[-3px] hover:after:right-[-3px] hover:after:bottom-[-3px];
+/** bouton */
+.wp-block-button .wp-block-button__link {
+  @apply hover:bg-button hover:animate-button relative after:z-[-1] after:content-[''] after:bg-secondary after:absolute after:top-1 after:left-1 after:-right-1 after:-bottom-1 framerounded ;
   background-size: 200% 200%;
+}
+
+/** frame border */
+.gm-frame {
+  @apply my-10 p-8 md:p-14 border-2 framerounded border-primary border-solid relative after:content-[''] after:absolute after:top-1 after:left-1 after:-right-2 after:-bottom-2 after:border-2  after:border-secondary after:border-solid right-1
+}
+
+/** frame bg */
+.gm-frame-bg {
+  @apply framerounded;
 }

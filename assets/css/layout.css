@@ -1,5 +1,5 @@
 body {
-  @apply bg-background;
+  @apply bg-[var(--wp--custom--colors--body)];
 }
 
 .site-main,
@@ -8,7 +8,7 @@ body {
 }
 
 .main-content {
-  @apply min-h-[60vh] py-16 mt-0;
+  @apply min-h-[50vh] pb-16 pt-6 mt-0 max-w-[95%] mx-auto;
 }
 
 /** header **/
@@ -17,7 +17,7 @@ body {
 }
 
 .site-header > div {
-  @apply w-full max-w-wide mx-auto px-3
+  @apply w-full max-w-wide mx-auto px-6
 }
 
 .site-header > div > .site-branding {
@@ -88,7 +88,7 @@ body {
 
 /** global wrapper */
 .gm-footer.wp-block-group {
-  @apply max-w-[95%] mx-auto flex-col md:flex-row bg-secondary p-4 lg:pb-8 mb-8 rounded-3xl
+  @apply max-w-[95%] mx-auto flex-col md:flex-row bg-secondary p-4 lg:pb-8 mb-8 framerounded
 }
 
 /** sub wrapper */
@@ -105,8 +105,16 @@ body {
   @apply mt-14 mb-14 items-center flex-col md:flex-row justify-center
 }
 
+.gm-footer > .wp-block-group:first-child > .wp-block-image {
+  @apply mx-10
+}
+
+.gm-footer > .wp-block-group:first-child > .wp-block-group {
+  @apply ml-0 md:ml-8 items-center md:items-start mt-3
+}
+
 .gm-footer > .wp-block-group:first-child p {
-  @apply lg:max-w-[55%] lg:mr-3 mb-4 lg:mb-0 text-center lg:text-left
+  @apply lg:mr-3 mb-2 text-center md:text-left
 }
 
 /** logo */

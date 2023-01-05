@@ -5,16 +5,16 @@ body
   @apply mx-auto max-w-[98vw] lg:max-w-content;
 }
 
-.main-content
+.entry-content
   > :where(:not(.alignleft):not(.alignright):not(.alignfull):not(.alignwide)) {
   @apply px-4 mx-auto max-w-[98vw] lg:max-w-content;
 }
 
-.main-content > .alignleft {
+.entry-content > .alignleft {
   @apply float-none mr-auto;
 }
 
-.main-content > .alignright {
+.entry-content > .alignright {
   @apply float-none ml-auto;
 }
 
@@ -23,7 +23,10 @@ body
 }
 
 .entry-content ul.wp-block-social-links,
-.entry-content ul.wpp-list-posts,
-.wp-block-post-title {
+.entry-content ul.wpp-list-posts {
   @apply pl-0;
+}
+
+.wp-block-post-title {
+  @apply pl-0 mx-auto max-w-content;
 }

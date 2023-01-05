@@ -4,8 +4,11 @@
 
 @import 'tailwindcss/utilities';
 
-/** theme */
 
+/** theme */
+@import './variables.css';
+@import './layer.css';
 @import './shared.css';
 @import './layout.css';
 @import './elements.css'
+

@@ -1,0 +1,5 @@
+@layer components {
+  .framerounded {
+    @apply rounded-[var(--frame-rounded)] after:rounded-[var(--frame-rounded)] before:rounded-[var(--frame-rounded)];
+  }
+}
