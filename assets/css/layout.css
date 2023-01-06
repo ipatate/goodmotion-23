@@ -1,5 +1,5 @@
 body {
-  @apply bg-[var(--wp--custom--colors--body)];
+  /* @apply bg-[var(--wp--custom--colors--body)]; */
 }
 
 .site-main,
@@ -13,11 +13,11 @@ body {
 
 /** header **/
 .site-header {
-  @apply flex flex-col py-4 bg-gray-50 backdrop-blur-md lg:items-center lg:flex-row;
+  @apply flex flex-col py-4 backdrop-blur-md lg:items-center lg:flex-row;
 }
 
 .site-header > div {
-  @apply w-full max-w-wide mx-auto px-6
+  @apply w-full max-w-wide mx-auto px-3 md:px-6
 }
 
 .site-header > div > .site-branding {
@@ -29,7 +29,7 @@ body {
 }
 
 .site-header > div > .site-branding a svg {
-  @apply lg:w-64 lg:h-16
+  @apply w-48 lg:w-64 lg:h-16
 }
 
 @keyframes blink-animation {
@@ -102,11 +102,15 @@ body {
 
 /** contact */
 .gm-footer > .wp-block-group:first-child {
-  @apply mt-14 mb-14 items-center flex-col md:flex-row justify-center
+  @apply mt-14 mb-14 items-center flex-col md:flex-row justify-center max-w-content
 }
 
 .gm-footer > .wp-block-group:first-child > .wp-block-image {
   @apply mx-10
+}
+
+.gm-footer > .wp-block-group:first-child > .wp-block-image img {
+  @apply min-w-[150px] min-h-[150px]
 }
 
 .gm-footer > .wp-block-group:first-child > .wp-block-group {

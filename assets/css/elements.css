@@ -1,12 +1,12 @@
 /** bouton */
 .wp-block-button .wp-block-button__link {
-  @apply hover:bg-button hover:animate-button relative after:z-[-1] after:content-[''] after:bg-secondary after:absolute after:top-1 after:left-1 after:-right-1 after:-bottom-1 framerounded ;
+  @apply hover:bg-button hover:animate-button relative after:z-[-1] after:content-[''] after:bg-secondary after:absolute after:top-1 after:left-1 after:right-[-3px] after:bottom-[-3px] framerounded ;
   background-size: 200% 200%;
 }
 
 /** frame border */
 .gm-frame {
-  @apply my-10 p-8 md:p-14 border-2 framerounded border-primary border-solid relative after:content-[''] after:absolute after:top-1 after:left-1 after:-right-2 after:-bottom-2 after:border-2  after:border-secondary after:border-solid right-1
+  @apply my-10 p-8 md:p-14 border-2 framerounded border-primary border-solid relative after:content-[''] after:absolute after:top-1 after:left-1 after:-right-2 after:-bottom-2 after:border-2  after:border-primary after:z-10 after:border-solid right-1
 }
 
 /** frame bg */
